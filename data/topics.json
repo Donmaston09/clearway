@@ -1,0 +1,37 @@
+{
+  "topics": [
+    { "id": "alertness", "name": "Alertness", "icon": "👀" },
+    { "id": "attitude", "name": "Attitude", "icon": "🤝" },
+    { "id": "safety-vehicle", "name": "Safety and your vehicle", "icon": "🔧" },
+    { "id": "safety-margins", "name": "Safety margins", "icon": "📏" },
+    { "id": "hazard-awareness", "name": "Hazard awareness", "icon": "⚠️" },
+    { "id": "vulnerable", "name": "Vulnerable road users", "icon": "🚸" },
+    { "id": "other-vehicles", "name": "Other types of vehicle", "icon": "🚌" },
+    { "id": "handling", "name": "Vehicle handling", "icon": "🛞" },
+    { "id": "motorway", "name": "Motorway rules", "icon": "🛣️" },
+    { "id": "rules-of-road", "name": "Rules of the road", "icon": "📘" },
+    { "id": "signs", "name": "Road and traffic signs", "icon": "🛑" },
+    { "id": "documents", "name": "Essential documents", "icon": "📄" },
+    { "id": "incidents", "name": "Incidents, accidents and emergencies", "icon": "🚑" },
+    { "id": "loading", "name": "Vehicle loading", "icon": "🧳" }
+  ],
+  "sections": {
+    "intro": { "title": "Introduction (H1–H3)", "slug": "introduction" },
+    "pedestrians": { "title": "Rules for pedestrians (1–35)", "slug": "rules-for-pedestrians-1-to-35" },
+    "animals": { "title": "Rules about animals (47–58)", "slug": "rules-about-animals-47-to-58" },
+    "drivers": { "title": "Rules for drivers and motorcyclists (89–102)", "slug": "rules-for-drivers-and-motorcyclists-89-to-102" },
+    "general": { "title": "General rules, techniques and advice (103–158)", "slug": "general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158" },
+    "road": { "title": "Using the road (159–203)", "slug": "using-the-road-159-to-203" },
+    "extracare": { "title": "Road users requiring extra care (204–225)", "slug": "road-users-requiring-extra-care-204-to-225" },
+    "weather": { "title": "Driving in adverse weather (226–237)", "slug": "driving-in-adverse-weather-conditions-226-to-237" },
+    "parking": { "title": "Waiting and parking (238–252)", "slug": "waiting-and-parking-238-to-252" },
+    "motorways": { "title": "Motorways (253–273)", "slug": "motorways-253-to-273" },
+    "breakdowns": { "title": "Breakdowns and incidents (274–287)", "slug": "breakdowns-and-incidents-274-to-287" },
+    "roadworks": { "title": "Road works, level crossings and tramways (288–307)", "slug": "road-works-level-crossings-and-tramways-288-to-307" },
+    "signs": { "title": "Traffic signs", "slug": "traffic-signs" },
+    "annex3": { "title": "Annex 3: Documentation and learner requirements", "slug": "annex-3-motor-vehicle-documentation-and-learner-driver-requirements" },
+    "annex5": { "title": "Annex 5: Penalties", "slug": "annex-5-penalties" },
+    "annex6": { "title": "Annex 6: Vehicle maintenance, safety and security", "slug": "annex-6-vehicle-maintenance-safety-and-security" },
+    "annex7": { "title": "Annex 7: First aid on the road", "slug": "annex-7-first-aid-on-the-road" }
+  }
+}

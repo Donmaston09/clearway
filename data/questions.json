@@ -1,0 +1,800 @@
+{
+  "version": 1,
+  "license": "CC BY-SA 4.0 (questions) — derived from The Highway Code, Crown copyright, Open Government Licence v3.0",
+  "questions": [
+    {
+      "id": "alert-001", "topic": "alertness",
+      "q": "You're about to move off from the side of the road. What should you do last, just before pulling away?",
+      "options": ["Look round to check your blind spot", "Sound your horn", "Switch on your dipped headlights", "Rev the engine to warn pedestrians"],
+      "answer": 0,
+      "explain": "Mirrors don't show everything. A final look over your shoulder covers the blind spot where a cyclist or car may be hidden. Only move off when it's safe.",
+      "ref": { "section": "road", "rule": "159" }
+    },
+    {
+      "id": "alert-002", "topic": "alertness",
+      "q": "You're driving on a motorway and start to feel tired. What should you do?",
+      "options": ["Leave at the next exit and find a safe place to stop and rest", "Stop on the hard shoulder for a short sleep", "Open the window and keep going to your destination", "Speed up so the journey ends sooner"],
+      "answer": 0,
+      "explain": "The hard shoulder is for emergencies only. Fresh air helps only briefly. Leave the motorway, stop somewhere safe and rest.",
+      "ref": { "section": "drivers", "rule": "91" }
+    },
+    {
+      "id": "alert-003", "topic": "alertness",
+      "q": "On a long journey, how often does The Highway Code recommend taking a break?",
+      "options": ["At least 15 minutes after every two hours of driving", "At least 5 minutes every hour", "Only when you start to feel sleepy", "30 minutes every four hours"],
+      "answer": 0,
+      "explain": "Rule 91 recommends a minimum break of at least 15 minutes after every two hours of driving.",
+      "ref": { "section": "drivers", "rule": "91" }
+    },
+    {
+      "id": "alert-004", "topic": "alertness",
+      "q": "When are you allowed to use a hand-held mobile phone while driving?",
+      "options": ["To call 999 or 112 in a genuine emergency when it's unsafe or impractical to stop", "When you're stopped in a traffic queue", "When the call will be very short", "When you're using it as a sat-nav"],
+      "answer": 0,
+      "explain": "You must not use a hand-held phone for any purpose while driving, and that includes sitting in queuing traffic. The only exception is a genuine emergency call to 999 or 112 when it's unsafe or impractical to stop.",
+      "ref": { "section": "general", "rule": "149" }
+    },
+    {
+      "id": "alert-005", "topic": "alertness",
+      "q": "Why can a hands-free phone call still be dangerous while driving?",
+      "options": ["It takes your attention away from the road", "It drains the car battery", "It's illegal in all circumstances", "It interferes with the car's brakes"],
+      "answer": 0,
+      "explain": "Hands-free calls are legal, but the conversation still distracts you. If you aren't in proper control of the vehicle you can still be prosecuted.",
+      "ref": { "section": "general", "rule": "149" }
+    },
+    {
+      "id": "alert-006", "topic": "alertness",
+      "q": "You want to enter a new destination into your sat-nav partway through a journey. What should you do?",
+      "options": ["Find a safe, legal place to stop first", "Do it while waiting at red traffic lights", "Do it on a straight, quiet road", "Ask a passenger to steer while you type"],
+      "answer": 0,
+      "explain": "Reading or typing on a screen takes your eyes and mind off the road. Stop safely first.",
+      "ref": { "section": "general", "rule": "148" }
+    },
+    {
+      "id": "att-001", "topic": "attitude",
+      "q": "What is the only reason The Highway Code gives for flashing your headlights?",
+      "options": ["To let other road users know you're there", "To let another driver pull out", "To thank another driver", "To warn of a police speed check"],
+      "answer": 0,
+      "explain": "Don't flash your headlights to send any other message. The other driver may misread it and pull out into danger.",
+      "ref": { "section": "general", "rule": "110" }
+    },
+    {
+      "id": "att-002", "topic": "attitude",
+      "q": "A driver behind you is following much too closely. What should you do?",
+      "options": ["Gradually ease off and leave a bigger gap in front of you", "Brake sharply to make them back off", "Speed up to get away from them", "Close up to the vehicle in front"],
+      "answer": 0,
+      "explain": "A larger gap ahead means you can brake more gently and earlier, so the tailgater is less likely to hit you. Don't react aggressively.",
+      "ref": { "section": "general", "rule": "126" }
+    },
+    {
+      "id": "att-003", "topic": "attitude",
+      "q": "In a built-up area, between which times must you NOT use your horn (unless another road user poses a danger)?",
+      "options": ["11.30pm and 7.00am", "10.00pm and 6.00am", "Midnight and 6.00am", "11.00pm and 8.00am"],
+      "answer": 0,
+      "explain": "You must not use your horn while stationary, or when driving in a built-up area between 11.30pm and 7.00am, unless another road user poses a danger.",
+      "ref": { "section": "general", "rule": "112" }
+    },
+    {
+      "id": "att-004", "topic": "attitude",
+      "q": "Under the 'hierarchy of road users', who has the greatest responsibility to reduce danger to others?",
+      "options": ["Those in charge of vehicles that can cause the greatest harm", "Pedestrians", "Cyclists", "Whoever arrived first"],
+      "answer": 0,
+      "explain": "Drivers of larger and heavier vehicles carry the greatest responsibility to look out for and reduce danger to more vulnerable road users.",
+      "ref": { "section": "intro", "rule": "H1" }
+    },
+    {
+      "id": "att-005", "topic": "attitude",
+      "q": "You're turning left into a side road and a pedestrian is waiting to cross it. What should you do?",
+      "options": ["Give way to the pedestrian", "Continue, because you have priority", "Sound your horn to warn them", "Speed up to clear the junction first"],
+      "answer": 0,
+      "explain": "At a junction you should give way to pedestrians crossing or waiting to cross a road into which or from which you're turning.",
+      "ref": { "section": "intro", "rule": "H2" }
+    },
+    {
+      "id": "att-006", "topic": "attitude",
+      "q": "An ambulance with flashing blue lights and siren is coming up behind you. What should you do?",
+      "options": ["Find a safe place to let it pass, without breaking traffic laws", "Stop immediately, wherever you are", "Mount the pavement to make room", "Drive through the red light ahead to clear the way"],
+      "answer": 0,
+      "explain": "Think about the emergency vehicle's route and help it pass, but don't put other people in danger or break the law. Avoid harsh braking or mounting the kerb.",
+      "ref": { "section": "extracare", "rule": "219" }
+    },
+    {
+      "id": "att-007", "topic": "attitude",
+      "q": "Another driver behaves badly and makes a rude gesture at you. What should you do?",
+      "options": ["Stay calm and don't get involved", "Follow them to find out why", "Gesture back to show them how it feels", "Flash your headlights repeatedly"],
+      "answer": 0,
+      "explain": "Rule 147: don't let yourself get agitated or involved when someone else behaves badly on the road.",
+      "ref": { "section": "general", "rule": "147" }
+    },
+    {
+      "id": "veh-001", "topic": "safety-vehicle",
+      "q": "What is the minimum legal tyre tread depth for a car?",
+      "options": ["1.6 mm across the central three-quarters of the tread, around the whole tyre", "1 mm across the full width of the tread", "2 mm on the outer edges only", "3 mm across the central half of the tread"],
+      "answer": 0,
+      "explain": "Car tyres must have at least 1.6 mm of tread across the central three-quarters of the tread width, all the way round.",
+      "ref": { "section": "annex6", "rule": "Annex 6" }
+    },
+    {
+      "id": "veh-002", "topic": "safety-vehicle",
+      "q": "Your car has anti-lock brakes (ABS). How should you brake in an emergency?",
+      "options": ["Press the brake pedal firmly and keep pressing until you've slowed down enough", "Pump the brake pedal on and off", "Pull the parking brake as well", "Brake gently and steer hard"],
+      "answer": 0,
+      "explain": "Apply the footbrake firmly and don't release the pressure. ABS stops the wheels locking, so you can still steer.",
+      "ref": { "section": "general", "rule": "120" }
+    },
+    {
+      "id": "veh-003", "topic": "safety-vehicle",
+      "q": "In Great Britain, when does a car normally need its first MOT test?",
+      "options": ["When it's three years old", "When it's one year old", "When it's five years old", "After 30,000 miles"],
+      "answer": 0,
+      "explain": "Cars must normally have their first MOT when they're three years old (four years in Northern Ireland), then every year after that.",
+      "ref": { "section": "annex3", "rule": "Annex 3" }
+    },
+    {
+      "id": "veh-004", "topic": "safety-vehicle",
+      "q": "Who is legally responsible for making sure a 12-year-old passenger wears a seat belt?",
+      "options": ["The driver", "The child", "The child's parent, even if they aren't in the car", "Nobody, because seat belts are optional for children"],
+      "answer": 0,
+      "explain": "The driver must make sure all children under 14 wear seat belts or sit in an approved child restraint.",
+      "ref": { "section": "drivers", "rule": "100" }
+    },
+    {
+      "id": "veh-005", "topic": "safety-vehicle",
+      "q": "What is a danger of 'coasting' (driving along with the clutch pressed down or in neutral)?",
+      "options": ["You lose engine braking, so you have less control", "It uses more fuel", "It damages the gearbox immediately", "It turns off your brake lights"],
+      "answer": 0,
+      "explain": "Coasting removes engine braking. Your speed builds quickly downhill, the footbrake has to work harder, and steering and gear selection are affected.",
+      "ref": { "section": "general", "rule": "122" }
+    },
+    {
+      "id": "veh-006", "topic": "safety-vehicle",
+      "q": "You're stopped on a public road and expect to be stationary for some time. What should you do?",
+      "options": ["Switch off the engine", "Keep the engine running so the car stays warm", "Rev the engine occasionally to keep the battery charged", "Leave the engine running and get out"],
+      "answer": 0,
+      "explain": "You must not leave an engine running unnecessarily while stationary on a public road. It causes pollution and wastes fuel.",
+      "ref": { "section": "general", "rule": "123" }
+    },
+    {
+      "id": "veh-007", "topic": "safety-vehicle",
+      "q": "You've just driven through a flood. What should you do first?",
+      "options": ["Test your brakes at the first safe opportunity", "Drive faster to dry out the engine", "Switch on your fog lights", "Check your tyre pressures"],
+      "answer": 0,
+      "explain": "Wet brakes can be less effective. Test them gently at the first safe opportunity.",
+      "ref": { "section": "general", "rule": "121" }
+    },
+    {
+      "id": "mar-001", "topic": "safety-margins",
+      "q": "What is the typical overall stopping distance for a car at 30 mph?",
+      "options": ["23 metres (about 6 car lengths)", "12 metres (about 3 car lengths)", "36 metres (about 9 car lengths)", "53 metres (about 13 car lengths)"],
+      "answer": 0,
+      "explain": "At 30 mph: about 9 m thinking distance plus 14 m braking distance, so 23 m in total.",
+      "ref": { "section": "general", "rule": "126" }
+    },
+    {
+      "id": "mar-002", "topic": "safety-margins",
+      "q": "What is the typical overall stopping distance for a car at 70 mph on a dry road?",
+      "options": ["96 metres (about 24 car lengths)", "73 metres (about 18 car lengths)", "53 metres (about 13 car lengths)", "120 metres (about 30 car lengths)"],
+      "answer": 0,
+      "explain": "At 70 mph: about 21 m thinking distance plus 75 m braking distance, so 96 m in total. 73 m is the figure for 60 mph.",
+      "ref": { "section": "general", "rule": "126" }
+    },
+    {
+      "id": "mar-003", "topic": "safety-margins",
+      "q": "What is the typical overall stopping distance at 50 mph?",
+      "options": ["53 metres", "36 metres", "73 metres", "38 metres"],
+      "answer": 0,
+      "explain": "At 50 mph: about 15 m thinking distance plus 38 m braking distance, so 53 m in total.",
+      "ref": { "section": "general", "rule": "126" }
+    },
+    {
+      "id": "mar-004", "topic": "safety-margins",
+      "q": "On a wet road, how should your gap to the vehicle in front compare with the two-second gap you'd leave on a dry road?",
+      "options": ["At least double it", "Keep it the same", "Add half a second", "Make it ten times bigger"],
+      "answer": 0,
+      "explain": "Leave at least a two-second gap on dry, high-speed roads. Double it on wet roads. On icy roads it can need to be up to ten times greater.",
+      "ref": { "section": "general", "rule": "126" }
+    },
+    {
+      "id": "mar-005", "topic": "safety-margins",
+      "q": "On icy roads, how much longer can stopping distances be compared with dry roads?",
+      "options": ["Up to ten times longer", "Up to twice as long", "Up to three times longer", "No longer if you have ABS"],
+      "answer": 0,
+      "explain": "Stopping distances can be up to ten times greater on ice. Keep well back and brake very gently.",
+      "ref": { "section": "weather", "rule": "230" }
+    },
+    {
+      "id": "mar-006", "topic": "safety-margins",
+      "q": "You're driving in heavy rain and the steering suddenly feels light and unresponsive. What should you do?",
+      "options": ["Ease off the accelerator and slow down gradually", "Brake hard immediately", "Steer sharply to find grip", "Accelerate to push through the water"],
+      "answer": 0,
+      "explain": "Unresponsive steering usually means water is stopping the tyres gripping the road (aquaplaning). Ease off and slow down gradually.",
+      "ref": { "section": "weather", "rule": "227" }
+    },
+    {
+      "id": "mar-007", "topic": "safety-margins",
+      "q": "When must you use headlights during the day?",
+      "options": ["When visibility is seriously reduced, generally when you can't see more than 100 metres", "Whenever it's raining", "Only on motorways", "Never, because daytime running lights are enough"],
+      "answer": 0,
+      "explain": "You must use headlights when visibility is seriously reduced, generally when you can't see for more than 100 metres (328 feet).",
+      "ref": { "section": "weather", "rule": "226" }
+    },
+    {
+      "id": "mar-008", "topic": "safety-margins",
+      "q": "You've been using fog lights. The fog clears and visibility improves. What must you do?",
+      "options": ["Switch the fog lights off", "Leave them on in case the fog returns", "Switch to full beam as well", "Switch them off only when you reach a built-up area"],
+      "answer": 0,
+      "explain": "Fog lights dazzle other road users and can hide your brake lights. You must switch them off when visibility improves.",
+      "ref": { "section": "weather", "rule": "236" }
+    },
+    {
+      "id": "mar-009", "topic": "safety-margins",
+      "q": "When driving in fog, what should you be able to do?",
+      "options": ["Pull up well within the distance you can see clearly", "Follow the rear lights of the vehicle in front closely", "Keep to the speed limit", "Use full-beam headlights to see further"],
+      "answer": 0,
+      "explain": "Drive slowly enough to stop within the distance you can see clearly. Following someone's rear lights can give a false sense of security.",
+      "ref": { "section": "weather", "rule": "235" }
+    },
+    {
+      "id": "haz-001", "topic": "hazard-awareness",
+      "q": "A ball bounces into the road ahead from between parked cars. What should you do?",
+      "options": ["Slow down and be ready to stop, because a child may run out after it", "Steer round the ball and carry on", "Sound your horn and keep going", "Speed up to get past quickly"],
+      "answer": 0,
+      "explain": "Where there's a ball, there's often a child chasing it. Drive carefully and slowly when passing parked vehicles in residential areas.",
+      "ref": { "section": "extracare", "rule": "206" }
+    },
+    {
+      "id": "haz-002", "topic": "hazard-awareness",
+      "q": "A bus has stopped at a bus stop on your side of the road. What hazard should you look out for most?",
+      "options": ["Pedestrians stepping out from in front of the bus", "The bus reversing", "The bus's hazard lights dazzling you", "Cyclists using the bus's slipstream"],
+      "answer": 0,
+      "explain": "People getting off a bus often cross the road from in front of it, where you can't see them. Go slowly and be ready to stop.",
+      "ref": { "section": "extracare", "rule": "206" }
+    },
+    {
+      "id": "haz-003", "topic": "hazard-awareness",
+      "q": "You're approaching a zebra crossing. The car in front has stopped to let pedestrians cross. What must you NOT do?",
+      "options": ["Overtake the stopped car", "Stop behind it", "Check your mirrors", "Wait for the pedestrians to finish crossing"],
+      "answer": 0,
+      "explain": "You must not overtake the moving vehicle nearest the crossing, or the vehicle nearest the crossing that has stopped to give way to pedestrians. It may be hiding someone who's crossing.",
+      "ref": { "section": "road", "rule": "191" }
+    },
+    {
+      "id": "haz-004", "topic": "hazard-awareness",
+      "q": "A school crossing patrol shows a 'Stop for children' sign. What must you do?",
+      "options": ["Stop", "Slow down and continue if no children are on the road yet", "Sound your horn to let them know you're coming", "Give way only if children are already crossing"],
+      "answer": 0,
+      "explain": "You must stop when a school crossing patrol shows a 'Stop for children' sign.",
+      "ref": { "section": "extracare", "rule": "210" }
+    },
+    {
+      "id": "haz-005", "topic": "hazard-awareness",
+      "q": "You want to pull out of a junction. When should you join the main road?",
+      "options": ["Only when there's a gap large enough to do so safely", "As soon as the vehicle on the main road flashes its lights", "When you've waited for more than 30 seconds", "When traffic from the right has passed, without looking left"],
+      "answer": 0,
+      "explain": "Look all around before you emerge. Don't cross or join a road until there's a gap large enough for you to do so safely.",
+      "ref": { "section": "road", "rule": "170" }
+    },
+    {
+      "id": "haz-006", "topic": "hazard-awareness",
+      "q": "Why should you take extra care when emerging from a junction where there might be motorcyclists?",
+      "options": ["They can be hard to see and may be closer or faster than you think", "They always have priority at junctions", "They are not allowed to brake suddenly", "They must ride in the centre of the lane"],
+      "answer": 0,
+      "explain": "Motorcyclists and cyclists can be hidden by other vehicles or road features, and they could be approaching faster than you think.",
+      "ref": { "section": "extracare", "rule": "211" }
+    },
+    {
+      "id": "vul-001", "topic": "vulnerable",
+      "q": "At speeds of up to 30 mph, how much space should you leave when overtaking a cyclist?",
+      "options": ["At least 1.5 metres", "At least 0.5 metres", "At least 1 metre", "Whatever space the lane allows"],
+      "answer": 0,
+      "explain": "Leave at least 1.5 metres when overtaking cyclists at speeds of up to 30 mph, and more at higher speeds.",
+      "ref": { "section": "road", "rule": "163" }
+    },
+    {
+      "id": "vul-002", "topic": "vulnerable",
+      "q": "How should you pass a horse rider on the road?",
+      "options": ["Slowly, at no more than 10 mph, leaving at least 2 metres", "Quickly, so you spend less time alongside", "Sounding your horn first so they know you're there", "Leaving at least 1 metre at 20 mph"],
+      "answer": 0,
+      "explain": "Slow down to a maximum of 10 mph, pass wide and slow with at least 2 metres of space, and don't sound your horn or rev your engine.",
+      "ref": { "section": "extracare", "rule": "215" }
+    },
+    {
+      "id": "vul-003", "topic": "vulnerable",
+      "q": "You see a pedestrian with a white cane that has a red band. What does this mean?",
+      "options": ["They may be deafblind", "They are partially sighted only", "They are a road safety officer", "They are about to cross at a zebra crossing"],
+      "answer": 0,
+      "explain": "A white cane with a red band shows that the person may be both deaf and blind. Take extra care and give them plenty of time.",
+      "ref": { "section": "extracare", "rule": "207" }
+    },
+    {
+      "id": "vul-004", "topic": "vulnerable",
+      "q": "You've parked at the side of the road. What's the safest way for the driver to open their door?",
+      "options": ["Use the hand on the opposite side to the door (the 'Dutch Reach')", "Push the door open quickly and get out", "Open it slightly and wait for someone to pass", "Use whichever hand is nearest the door"],
+      "answer": 0,
+      "explain": "Opening the door with your far hand makes you turn your body, so you naturally look back for cyclists, motorcyclists and pedestrians.",
+      "ref": { "section": "parking", "rule": "239" }
+    },
+    {
+      "id": "vul-005", "topic": "vulnerable",
+      "q": "You're turning left at a junction and a cyclist is going straight ahead on your left. What should you do?",
+      "options": ["Give way and don't cut across them", "Turn first, because you're in front", "Sound your horn and turn", "Indicate and carry on, because they should give way"],
+      "answer": 0,
+      "explain": "Don't cut across cyclists, horse riders or horse-drawn vehicles going ahead when you're turning into or out of a junction or changing lane.",
+      "ref": { "section": "intro", "rule": "H3" }
+    },
+    {
+      "id": "vul-006", "topic": "vulnerable",
+      "q": "Why should you drive more slowly near elderly, disabled or young pedestrians?",
+      "options": ["At 20 mph a pedestrian hit by a car is far less likely to be killed than at higher speeds", "It's always the law to drive at 10 mph near pedestrians", "They always have priority everywhere", "So they can read your number plate"],
+      "answer": 0,
+      "explain": "Lower speeds give you more time to react and greatly reduce injury. Rule 207 notes only a 1 in 20 chance of a pedestrian being killed at 20 mph.",
+      "ref": { "section": "extracare", "rule": "207" }
+    },
+    {
+      "id": "oth-001", "topic": "other-vehicles",
+      "q": "A long vehicle ahead is signalling left but moving out to the right as it approaches a junction. What should you do?",
+      "options": ["Stay well back and give it room to turn", "Overtake on its left", "Overtake on its right", "Sound your horn"],
+      "answer": 0,
+      "explain": "Large vehicles often need extra road space to turn. Hang back and don't try to pass on either side.",
+      "ref": { "section": "extracare", "rule": "221" }
+    },
+    {
+      "id": "oth-002", "topic": "other-vehicles",
+      "q": "A bus is signalling to pull away from a bus stop just ahead of you. What should you do?",
+      "options": ["Give way to it if you can do so safely", "Speed up to pass before it moves", "Sound your horn to warn the driver", "Flash your headlights so it waits"],
+      "answer": 0,
+      "explain": "Give priority to buses and trams signalling to pull away from stops when you can do so safely.",
+      "ref": { "section": "extracare", "rule": "223" }
+    },
+    {
+      "id": "oth-003", "topic": "other-vehicles",
+      "q": "Before overtaking a large vehicle, what's most important to check?",
+      "options": ["That you have enough room to finish the overtake before committing to it", "That the large vehicle has its lights on", "That you're in the highest gear", "That the driver has seen you in their mirror"],
+      "answer": 0,
+      "explain": "Overtaking long vehicles takes more time and road. Make sure there's enough room to finish before you commit. Dropping back first also helps you see the road ahead.",
+      "ref": { "section": "road", "rule": "164" }
+    },
+    {
+      "id": "oth-004", "topic": "other-vehicles",
+      "q": "Why do you need to take particular care around trams?",
+      "options": ["They can't steer to avoid you", "They always travel faster than cars", "They have no brakes", "They give way to all other traffic"],
+      "answer": 0,
+      "explain": "Trams run on fixed rails, so they can't swerve around you. They're also quiet and can take a long distance to stop.",
+      "ref": { "section": "roadworks", "rule": "300–307" }
+    },
+    {
+      "id": "han-001", "topic": "handling",
+      "q": "The rear of your car starts to skid to the right. What should you do?",
+      "options": ["Steer to the right", "Steer to the left", "Brake hard", "Pull the parking brake"],
+      "answer": 0,
+      "explain": "Steer in the direction of the skid. If the rear skids to the right, steer right to recover. Don't brake harshly.",
+      "ref": { "section": "general", "rule": "119" }
+    },
+    {
+      "id": "han-002", "topic": "handling",
+      "q": "How should you drive in snow or on ice?",
+      "options": ["At a slow speed, in as high a gear as possible, braking and accelerating gently", "In a low gear with high revs for more grip", "At normal speed with ABS switched on", "Close behind other vehicles so you can follow their tracks"],
+      "answer": 0,
+      "explain": "Drive slowly in as high a gear as possible, and accelerate, brake and steer very gently to avoid skidding.",
+      "ref": { "section": "weather", "rule": "231" }
+    },
+    {
+      "id": "han-003", "topic": "handling",
+      "q": "Your caravan starts to snake (swerve from side to side). What should you do?",
+      "options": ["Ease off the accelerator and reduce speed gently", "Brake hard", "Accelerate to straighten it out", "Steer sharply in the opposite direction"],
+      "answer": 0,
+      "explain": "Ease off and slow down gently to regain control. Don't brake harshly.",
+      "ref": { "section": "drivers", "rule": "98" }
+    },
+    {
+      "id": "mwy-001", "topic": "motorway",
+      "q": "When can a learner car driver drive on a motorway?",
+      "options": ["With an approved driving instructor (ADI), in a car with dual controls showing L plates", "With any full licence holder over 21", "Never, until they've passed their test", "Only in the left lane, with any supervisor"],
+      "answer": 0,
+      "explain": "Provisional car licence holders must not drive on a motorway unless accompanied by a DVSA approved driving instructor, in a car with dual controls displaying red L plates.",
+      "ref": { "section": "motorways", "rule": "253" }
+    },
+    {
+      "id": "mwy-002", "topic": "motorway",
+      "q": "A red X is shown above your lane on a motorway. What does it mean?",
+      "options": ["You must not drive in that lane", "The lane ahead is reserved for buses", "Speed cameras are active", "Use the lane with caution"],
+      "answer": 0,
+      "explain": "A red X means the lane is closed. There may be a stopped vehicle, debris or people ahead. Move to an open lane in good time.",
+      "ref": { "section": "motorways", "rule": "258" }
+    },
+    {
+      "id": "mwy-003", "topic": "motorway",
+      "q": "On a motorway with three lanes, which lane should you normally drive in?",
+      "options": ["The left lane, unless you're overtaking", "The middle lane", "Any lane, as long as you keep to the speed limit", "The right lane, if it's clear"],
+      "answer": 0,
+      "explain": "Keep to the left lane unless you're overtaking. Move back to the left when it's safe to do so.",
+      "ref": { "section": "motorways", "rule": "264" }
+    },
+    {
+      "id": "mwy-004", "topic": "motorway",
+      "q": "Which of these must NOT use the right-hand lane of a motorway with three or more lanes (except in special circumstances)?",
+      "options": ["A car towing a trailer", "A motorcycle", "A car carrying four passengers", "An electric car"],
+      "answer": 0,
+      "explain": "Vehicles towing trailers, goods vehicles over 7.5 tonnes and certain other large vehicles must not use the right-hand lane of a motorway with three or more lanes.",
+      "ref": { "section": "motorways", "rule": "265" }
+    },
+    {
+      "id": "mwy-005", "topic": "motorway",
+      "q": "Your car breaks down on the motorway and you pull onto the hard shoulder. How should you get out?",
+      "options": ["By the side furthest from traffic, if it's safe, then wait well away from the vehicle", "Through the driver's door, then stand behind the car", "Stay in the car with the seatbelt off", "Get out and walk to the nearest exit"],
+      "answer": 0,
+      "explain": "Exit by the side furthest from traffic if it's safe and possible. Wait well away from your vehicle and moving traffic, behind the safety barrier if there is one.",
+      "ref": { "section": "breakdowns", "rule": "277" }
+    },
+    {
+      "id": "mwy-006", "topic": "motorway",
+      "q": "On a motorway, what colour are the reflective studs between the hard shoulder (or left edge) and the carriageway?",
+      "options": ["Red", "Amber", "Green", "White"],
+      "answer": 0,
+      "explain": "Red studs mark the left edge, amber the central reservation, white the lanes, and green the edge of the main carriageway at slip roads and lay-bys.",
+      "ref": { "section": "general", "rule": "132" }
+    },
+    {
+      "id": "mwy-007", "topic": "motorway",
+      "q": "What colour are the reflective studs that mark the edge of a slip road where it joins the main carriageway?",
+      "options": ["Green", "Red", "Amber", "Blue"],
+      "answer": 0,
+      "explain": "Green studs mark the edge of the main carriageway at lay-bys and slip roads.",
+      "ref": { "section": "general", "rule": "132" }
+    },
+    {
+      "id": "mwy-008", "topic": "motorway",
+      "q": "What is the national speed limit for cars on a motorway?",
+      "options": ["70 mph", "60 mph", "80 mph", "50 mph"],
+      "answer": 0,
+      "explain": "Cars and motorcycles: 30 mph in built-up areas, 60 on single carriageways, 70 on dual carriageways and motorways, unless signs show otherwise.",
+      "ref": { "section": "general", "rule": "124" }
+    },
+    {
+      "id": "row-001", "topic": "rules-of-road",
+      "q": "At a roundabout, who should you normally give priority to?",
+      "options": ["Traffic approaching from your right", "Traffic approaching from your left", "Traffic already waiting opposite you", "Larger vehicles"],
+      "answer": 0,
+      "explain": "Give priority to traffic approaching from your right, unless signs, road markings or traffic lights tell you otherwise.",
+      "ref": { "section": "road", "rule": "185" }
+    },
+    {
+      "id": "row-002", "topic": "rules-of-road",
+      "q": "When may you enter a yellow box junction?",
+      "options": ["When your exit road or lane is clear", "Whenever the traffic light is green", "Whenever you're turning left", "Only between 7pm and 7am"],
+      "answer": 0,
+      "explain": "You must not enter the box until your exit is clear. You may enter and wait when turning right if you're only stopped by oncoming traffic or other vehicles waiting to turn right.",
+      "ref": { "section": "road", "rule": "174" }
+    },
+    {
+      "id": "row-003", "topic": "rules-of-road",
+      "q": "The traffic light ahead changes from green to amber. When may you keep going?",
+      "options": ["Only if you've already crossed the stop line or are so close that stopping might cause a collision", "Whenever no other traffic is around", "If you speed up to get through quickly", "If you're turning left"],
+      "answer": 0,
+      "explain": "Amber means stop, unless you've already crossed the stop line or are so close that stopping might cause a collision.",
+      "ref": { "section": "road", "rule": "175" }
+    },
+    {
+      "id": "row-004", "topic": "rules-of-road",
+      "q": "Unless in an authorised parking space, how close to a junction must you NOT park?",
+      "options": ["Opposite or within 10 metres", "Within 5 metres", "Within 20 metres", "Within 2 car lengths"],
+      "answer": 0,
+      "explain": "Don't stop or park opposite or within 10 metres (32 feet) of a junction, except in an authorised parking space.",
+      "ref": { "section": "parking", "rule": "243" }
+    },
+    {
+      "id": "row-005", "topic": "rules-of-road",
+      "q": "You're parking on a road at night, not in a recognised parking space. Which way must your car face?",
+      "options": ["In the direction of the traffic flow", "Against the direction of traffic flow", "Either way, as long as your lights are on", "Whichever way is easiest to leave"],
+      "answer": 0,
+      "explain": "You must not park on a road at night facing against the direction of the traffic flow, unless you're in a recognised parking space.",
+      "ref": { "section": "parking", "rule": "248" }
+    },
+    {
+      "id": "row-006", "topic": "rules-of-road",
+      "q": "Which of these should you never do?",
+      "options": ["Reverse from a side road into a main road", "Reverse into a parking bay", "Reverse around a corner into a quiet side road", "Reverse for a short distance in a car park"],
+      "answer": 0,
+      "explain": "Don't reverse from a side road into a main road. Reverse into the side road instead, so you emerge forwards.",
+      "ref": { "section": "road", "rule": "201" }
+    },
+    {
+      "id": "row-007", "topic": "rules-of-road",
+      "q": "At a pelican crossing the amber light is flashing and a pedestrian is still on the crossing. What must you do?",
+      "options": ["Give way to the pedestrian", "Drive on, because flashing amber means go", "Sound your horn to hurry them", "Edge forward around them"],
+      "answer": 0,
+      "explain": "When the amber light is flashing you must give way to any pedestrians on the crossing.",
+      "ref": { "section": "road", "rule": "196" }
+    },
+    {
+      "id": "row-008", "topic": "rules-of-road",
+      "q": "Who can use a toucan crossing?",
+      "options": ["Cyclists and pedestrians together", "Pedestrians only", "Horse riders only", "Buses only"],
+      "answer": 0,
+      "explain": "Toucan crossings are light-controlled crossings that let cyclists and pedestrians share the crossing space and cross at the same time.",
+      "ref": { "section": "pedestrians", "rule": "25" }
+    },
+    {
+      "id": "row-009", "topic": "rules-of-road",
+      "q": "What is the national speed limit for a car on a single carriageway road?",
+      "options": ["60 mph", "50 mph", "70 mph", "40 mph"],
+      "answer": 0,
+      "explain": "For cars: 30 mph in built-up areas, 60 mph on single carriageways, 70 mph on dual carriageways and motorways, unless signs show otherwise.",
+      "ref": { "section": "general", "rule": "124" }
+    },
+    {
+      "id": "row-010", "topic": "rules-of-road",
+      "q": "There are double white lines in the centre of the road and the line nearest you is solid. When may you cross it to overtake?",
+      "options": ["To pass a cyclist, horse rider or road maintenance vehicle travelling at 10 mph or less, if safe", "Whenever the road ahead is clear", "Never, under any circumstances", "Only at night"],
+      "answer": 0,
+      "explain": "You must not cross or straddle a solid line on your side, except when it's safe and you need to enter premises or a side road, or to pass a stationary vehicle, or a cyclist, horse rider or road maintenance vehicle doing 10 mph or less.",
+      "ref": { "section": "general", "rule": "129" }
+    },
+    {
+      "id": "row-011", "topic": "rules-of-road",
+      "q": "When may you use hazard warning lights while driving?",
+      "options": ["On a motorway or unrestricted dual carriageway, briefly, to warn drivers behind of a hazard ahead", "When you're parked on double yellow lines", "When driving slowly in bad weather", "To thank another driver"],
+      "answer": 0,
+      "explain": "Hazard lights may be used while stationary to warn that you're temporarily obstructing traffic. You must not use them while driving, except on a motorway or unrestricted dual carriageway to warn of a hazard ahead.",
+      "ref": { "section": "general", "rule": "116" }
+    },
+    {
+      "id": "sgn-001", "topic": "signs",
+      "q": "What does this sign mean?",
+      "image": "img/signs/give-way.svg",
+      "imageAlt": "Inverted red-bordered white triangle with the words GIVE WAY",
+      "options": ["Give way to traffic on the major road", "Stop at the line in all cases", "Road narrows ahead", "Warning: roundabout ahead"],
+      "answer": 0,
+      "explain": "The inverted triangle is the 'give way' sign. It has a unique shape so it can be recognised even when covered in snow or dirt.",
+      "ref": { "section": "signs", "rule": "Traffic signs" }
+    },
+    {
+      "id": "sgn-002", "topic": "signs",
+      "q": "What must you do at this sign?",
+      "image": "img/signs/stop.svg",
+      "imageAlt": "Red octagonal sign with the word STOP",
+      "options": ["Stop at the line, then give way to traffic on the major road", "Slow down and give way if necessary", "Stop only if traffic is coming", "Stop only if a police officer is present"],
+      "answer": 0,
+      "explain": "The octagonal STOP sign means you must stop completely at the line, even if the road looks clear, then give way.",
+      "ref": { "section": "signs", "rule": "Traffic signs" }
+    },
+    {
+      "id": "sgn-003", "topic": "signs",
+      "q": "What does this sign mean?",
+      "image": "img/signs/no-entry.svg",
+      "imageAlt": "Red circle with a horizontal white bar",
+      "options": ["No entry for vehicular traffic", "No through road", "No waiting", "One-way traffic"],
+      "answer": 0,
+      "explain": "A red circle with a white bar means no entry for vehicles. You'll usually see it at the exit end of a one-way street.",
+      "ref": { "section": "signs", "rule": "Traffic signs" }
+    },
+    {
+      "id": "sgn-004", "topic": "signs",
+      "q": "What does this sign mean?",
+      "image": "img/signs/national-speed-limit.svg",
+      "imageAlt": "White circle with a black diagonal stripe",
+      "options": ["The national speed limit applies", "End of all restrictions, so there's no speed limit", "No overtaking", "Minimum speed limit"],
+      "answer": 0,
+      "explain": "The white circle with a black diagonal stripe means the national speed limit for that type of road and vehicle applies. It never means there's no limit.",
+      "ref": { "section": "signs", "rule": "Traffic signs" }
+    },
+    {
+      "id": "sgn-005", "topic": "signs",
+      "q": "What does this sign mean?",
+      "image": "img/signs/clearway.svg",
+      "imageAlt": "Blue circle with red border and a red diagonal cross",
+      "options": ["No stopping (clearway)", "No waiting", "No entry", "Crossroads ahead"],
+      "answer": 0,
+      "explain": "A red cross on a blue background with a red border means no stopping at all during the times shown, not even to set down or pick up passengers.",
+      "ref": { "section": "signs", "rule": "Traffic signs" }
+    },
+    {
+      "id": "sgn-006", "topic": "signs",
+      "q": "What does this sign mean?",
+      "image": "img/signs/no-waiting.svg",
+      "imageAlt": "Blue circle with red border and a single red diagonal line",
+      "options": ["No waiting", "No stopping (clearway)", "No parking for disabled badge holders", "End of restriction"],
+      "answer": 0,
+      "explain": "A single red diagonal bar means no waiting. Compare it with the red cross (no stopping). Times are usually shown on a plate below.",
+      "ref": { "section": "signs", "rule": "Traffic signs" }
+    },
+    {
+      "id": "sgn-007", "topic": "signs",
+      "q": "What does this sign mean?",
+      "image": "img/signs/min-30.svg",
+      "imageAlt": "Blue circle with the white number 30",
+      "options": ["Minimum speed 30 mph", "Maximum speed 30 mph", "Recommended speed 30 mph", "30 mph zone ends"],
+      "answer": 0,
+      "explain": "Blue circles give positive (mandatory) instructions. A blue circle with a number shows a minimum speed. A red ring with a number shows a maximum.",
+      "ref": { "section": "signs", "rule": "Traffic signs" }
+    },
+    {
+      "id": "sgn-008", "topic": "signs",
+      "q": "What does this sign mean?",
+      "image": "img/signs/max-30.svg",
+      "imageAlt": "White circle with red border and the number 30",
+      "options": ["Maximum speed 30 mph", "Minimum speed 30 mph", "Recommended speed 30 mph", "30 metres to the junction"],
+      "answer": 0,
+      "explain": "A red ring means prohibition. Here, you must not exceed 30 mph.",
+      "ref": { "section": "signs", "rule": "Traffic signs" }
+    },
+    {
+      "id": "sgn-009", "topic": "signs",
+      "q": "What does this sign mean?",
+      "image": "img/signs/ahead-only.svg",
+      "imageAlt": "Blue circle with a white arrow pointing up",
+      "options": ["Ahead only", "One-way street", "Priority over oncoming traffic", "Motorway ahead"],
+      "answer": 0,
+      "explain": "Blue circles give mandatory instructions. This one means you may only go straight ahead.",
+      "ref": { "section": "signs", "rule": "Traffic signs" }
+    },
+    {
+      "id": "sgn-010", "topic": "signs",
+      "q": "Signs that give orders are mostly what shape?",
+      "options": ["Circular", "Triangular", "Rectangular", "Diamond-shaped"],
+      "answer": 0,
+      "explain": "Circles give orders, triangles warn, and rectangles inform. The exceptions are STOP (octagon) and GIVE WAY (inverted triangle).",
+      "ref": { "section": "signs", "rule": "Traffic signs" }
+    },
+    {
+      "id": "sgn-011", "topic": "signs",
+      "q": "What do triangular signs (pointing upwards) generally do?",
+      "options": ["Warn of a hazard ahead", "Give orders", "Give information", "Show the route to a motorway"],
+      "answer": 0,
+      "explain": "Triangular signs are warnings. Circles give orders and rectangles give information.",
+      "ref": { "section": "signs", "rule": "Traffic signs" }
+    },
+    {
+      "id": "doc-001", "topic": "documents",
+      "q": "Someone supervising a learner car driver must be at least what age, and have held a full car licence for how long?",
+      "options": ["21, and held a full licence for at least 3 years", "18, and held a full licence for at least 1 year", "25, and held a full licence for at least 5 years", "17, with any full licence"],
+      "answer": 0,
+      "explain": "A supervisor must be at least 21 and have held a full licence for that category of vehicle for at least 3 years.",
+      "ref": { "section": "annex3", "rule": "Annex 3" }
+    },
+    {
+      "id": "doc-002", "topic": "documents",
+      "q": "You passed your driving test 18 months ago. How many penalty points would lead to your licence being revoked?",
+      "options": ["6 or more", "3 or more", "9 or more", "12 or more"],
+      "answer": 0,
+      "explain": "Under the New Drivers Act, if you get 6 or more points within two years of passing your first test, your licence is revoked and you must re-take your tests.",
+      "ref": { "section": "annex5", "rule": "Annex 5" }
+    },
+    {
+      "id": "doc-003", "topic": "documents",
+      "q": "What is the minimum level of insurance cover you must have to drive on the road?",
+      "options": ["Third party", "Fully comprehensive", "Third party, fire and theft", "Breakdown cover"],
+      "answer": 0,
+      "explain": "To use a vehicle on the road you must be covered at least for third party liability.",
+      "ref": { "section": "annex3", "rule": "Annex 3" }
+    },
+    {
+      "id": "doc-004", "topic": "documents",
+      "q": "In good daylight, from what distance must you be able to read a vehicle number plate (with glasses or contact lenses if you need them)?",
+      "options": ["20 metres", "10 metres", "30 metres", "50 metres"],
+      "answer": 0,
+      "explain": "You must be able to read a vehicle number plate in good daylight from 20 metres, using glasses or contact lenses if you need them.",
+      "ref": { "section": "drivers", "rule": "92" }
+    },
+    {
+      "id": "doc-005", "topic": "documents",
+      "q": "In England and Wales, what is the legal blood alcohol limit for driving?",
+      "options": ["80 mg per 100 ml of blood", "50 mg per 100 ml of blood", "35 mg per 100 ml of blood", "100 mg per 100 ml of blood"],
+      "answer": 0,
+      "explain": "In England and Wales the limit is 80 mg alcohol per 100 ml of blood (35 µg per 100 ml of breath). Scotland's limits are lower. The safest choice is not to drink at all if you're driving.",
+      "ref": { "section": "drivers", "rule": "95" }
+    },
+    {
+      "id": "inc-001", "topic": "incidents",
+      "q": "You've broken down on an ordinary road. How far behind your vehicle should you place a warning triangle?",
+      "options": ["At least 45 metres", "At least 10 metres", "At least 25 metres", "At least 100 metres"],
+      "answer": 0,
+      "explain": "Place a warning triangle at least 45 metres (147 feet) behind your vehicle on the same side of the road. Never use one on a motorway.",
+      "ref": { "section": "breakdowns", "rule": "276" }
+    },
+    {
+      "id": "inc-002", "topic": "incidents",
+      "q": "You're involved in a collision and don't give your name and address at the scene. Within what time must you report it to the police?",
+      "options": ["As soon as reasonably practicable, and in any case within 24 hours", "Within 7 days", "Within 48 hours", "Only if someone was injured"],
+      "answer": 0,
+      "explain": "If you don't give your details at the time, report the collision to the police as soon as reasonably practicable, and in any case within 24 hours.",
+      "ref": { "section": "breakdowns", "rule": "286" }
+    },
+    {
+      "id": "inc-003", "topic": "incidents",
+      "q": "An injured motorcyclist is lying in the road. What should you NOT do?",
+      "options": ["Remove their helmet, unless it's essential", "Call the emergency services", "Warn other traffic", "Check whether they're breathing"],
+      "answer": 0,
+      "explain": "Don't remove a motorcyclist's helmet unless it's essential, for example if they're not breathing normally. You could make a spinal injury worse.",
+      "ref": { "section": "annex7", "rule": "Annex 7" }
+    },
+    {
+      "id": "inc-004", "topic": "incidents",
+      "q": "At an incident, someone has a burn. How long should you cool it with clean, cool water?",
+      "options": ["At least 20 minutes", "At least 2 minutes", "At least 5 minutes", "Until the pain stops, even if it's under a minute"],
+      "answer": 0,
+      "explain": "Cool the burn for at least 20 minutes with plenty of clean, cool water. Don't remove anything that's sticking to the burn.",
+      "ref": { "section": "annex7", "rule": "Annex 7" }
+    },
+    {
+      "id": "inc-005", "topic": "incidents",
+      "q": "When giving chest compressions to an adult, how deep and how fast should you press?",
+      "options": ["About 5 to 6 cm, about twice a second", "About 1 to 2 cm, once every 2 seconds", "About 10 cm, once a second", "As gently as possible, about once every 5 seconds"],
+      "answer": 0,
+      "explain": "Press down hard and fast, around 5 to 6 centimetres deep and about twice a second.",
+      "ref": { "section": "annex7", "rule": "Annex 7" }
+    },
+    {
+      "id": "inc-006", "topic": "incidents",
+      "q": "In first aid, what does 'DR ABC' stand for?",
+      "options": ["Danger, Response, Airway, Breathing, Circulation", "Doctor, Rescue, Ambulance, Bandage, Call", "Drive, React, Assist, Brake, Check", "Danger, Rest, Assess, Bleeding, Comfort"],
+      "answer": 0,
+      "explain": "Check for Danger, check for a Response, open the Airway, check Breathing, then deal with Circulation (bleeding and compressions).",
+      "ref": { "section": "annex7", "rule": "Annex 7" }
+    },
+    {
+      "id": "inc-007", "topic": "incidents",
+      "q": "You're first to arrive at a crash. What should you ask the drivers involved to do?",
+      "options": ["Switch off their engines and stop smoking", "Move their vehicles to the side straight away", "Keep their engines running for heat", "Leave the scene before the police arrive"],
+      "answer": 0,
+      "explain": "Ask drivers to switch off their engines and everyone to stop smoking, because there may be spilt fuel. Then call the emergency services.",
+      "ref": { "section": "breakdowns", "rule": "283" }
+    },
+    {
+      "id": "inc-008", "topic": "incidents",
+      "q": "Your car stalls on a level crossing. What should you do first?",
+      "options": ["Get everyone out of the vehicle and clear of the crossing", "Keep trying to restart the engine", "Walk down the line to look for a train", "Push the car off the crossing straight away"],
+      "answer": 0,
+      "explain": "Get everyone out and clear of the crossing immediately. Then use the railway telephone, if there is one, to tell the signal operator. Only try to move the car if there's plenty of time.",
+      "ref": { "section": "roadworks", "rule": "299" }
+    },
+    {
+      "id": "inc-009", "topic": "incidents",
+      "q": "At a level crossing, a train has just passed but the red lights keep flashing. What must you do?",
+      "options": ["Keep waiting, because another train is coming", "Cross carefully now the train has gone", "Zig-zag around the barriers", "Sound your horn and cross"],
+      "answer": 0,
+      "explain": "You must wait if a train goes by and the red lights keep flashing. It means another train will be passing soon.",
+      "ref": { "section": "roadworks", "rule": "293" }
+    },
+    {
+      "id": "lod-001", "topic": "loading",
+      "q": "Who is responsible for making sure a vehicle isn't overloaded?",
+      "options": ["The driver", "The vehicle's owner, even when they aren't driving", "Whoever loaded it", "The passengers"],
+      "answer": 0,
+      "explain": "You must not overload your vehicle or trailer. As the driver, you're responsible.",
+      "ref": { "section": "drivers", "rule": "98" }
+    },
+    {
+      "id": "lod-002", "topic": "loading",
+      "q": "You're carrying a load on a roof rack. What must you make sure of?",
+      "options": ["It's secure and doesn't stick out dangerously", "It's covered with a sheet", "It's no taller than the car", "It's tied with rope only"],
+      "answer": 0,
+      "explain": "You must secure your load and it must not stick out dangerously. Heavy or sharp objects and any animals must be secured safely.",
+      "ref": { "section": "drivers", "rule": "98" }
+    },
+    {
+      "id": "lod-003", "topic": "loading",
+      "q": "Where must a rear-facing baby seat NOT be fitted?",
+      "options": ["In a seat protected by an active frontal airbag", "In the back seat", "Behind the driver", "In any seat with a three-point seat belt"],
+      "answer": 0,
+      "explain": "An active frontal airbag can seriously injure or kill a baby in a rear-facing seat in a crash.",
+      "ref": { "section": "drivers", "rule": "101" }
+    },
+    {
+      "id": "lod-004", "topic": "loading",
+      "q": "How should the load be arranged in a caravan or trailer?",
+      "options": ["Spread evenly, to reduce the risk of snaking", "As much as possible at the very back", "All on one side", "It doesn't matter if it's secure"],
+      "answer": 0,
+      "explain": "Spreading the weight evenly reduces the risk of swerving or snaking and losing control.",
+      "ref": { "section": "drivers", "rule": "98" }
+    },
+    {
+      "id": "lod-005", "topic": "loading",
+      "q": "You're taking your dog on a car journey. What should you do?",
+      "options": ["Make sure it's suitably restrained", "Let it sit on the front passenger's lap", "Let it roam free so it stays calm", "Open a window fully so it can put its head out"],
+      "answer": 0,
+      "explain": "Make sure dogs and other animals are suitably restrained, so they can't distract you or be hurt if you stop quickly.",
+      "ref": { "section": "animals", "rule": "57" }
+    }
+  ]
+}
