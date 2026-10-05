@@ -36,8 +36,6 @@ python3 -m http.server 8000
 
 Then open http://localhost:8000. (Opening `index.html` directly won't work, because browsers block ES modules on `file://`.)
 
-## Deploy for free
-Push to GitHub and turn on **GitHub Pages** (Settings → Pages → deploy from branch). Netlify, Cloudflare Pages and Vercel also work with zero configuration. If you fork the project, update `REPO` at the top of `js/app.js` to your repository URL.
 
 ## Project layout
 ```
