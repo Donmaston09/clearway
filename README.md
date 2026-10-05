@@ -69,6 +69,12 @@ node scripts/check-videos.mjs
 - [ ] Motorcycle, LGV and PCV question sets
 - [ ] Optional sync between devices, without accounts (e.g. a passphrase-encrypted export)
 
+## Creator
+Created by **Anthony Onoja, PhD** ([donmaston09@gmail.com](mailto:donmaston09@gmail.com)).
+
+## Support the project
+Clearway is free and has no adverts. If it helped you pass, you can [buy me a coffee ☕](https://www.paypal.com/paypalme/Onoja412). It helps cover hosting and the time spent writing and reviewing new content.
+
 ## Legal
 Code: MIT. Questions and scenes: CC BY-SA 4.0. Contains public sector information from The Highway Code, licensed under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
 

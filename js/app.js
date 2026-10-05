@@ -3,6 +3,8 @@ import { SCENES, playClip, scoreClip, drawPoster } from './hazard.js';
 
 // Change this to your fork's URL so "Report a problem" opens an issue in the right place.
 const REPO = 'https://github.com/Donmaston09/clearway';
+const CREATOR = { name: 'Anthony Onoja, PhD', email: 'donmaston09@gmail.com' };
+const DONATE = 'https://www.paypal.com/paypalme/Onoja412';
 const HC = 'https://www.gov.uk/guidance/the-highway-code/';
 const MOCK = { count: 50, minutes: 57, pass: 43 };
 const HAZARD_PASS = { car: 44, max: 75 };
@@ -70,6 +72,15 @@ document.addEventListener('click', e => {
   frame.className = 'yt-frame';
   btn.replaceWith(frame);
 });
+
+function supportCard() {
+  return `<aside class="card support">
+    <span class="s-icon" aria-hidden="true">☕</span>
+    <div><b>Clearway is free, with no adverts</b>
+      <p class="muted small">It's built and run by ${esc(CREATOR.name)}. If it's helping you prepare, you could buy me a coffee to cover hosting and new content.</p></div>
+    <a class="btn" href="${DONATE}" target="_blank" rel="noopener">Buy me a coffee</a>
+  </aside>`;
+}
 
 function setNav(route) {
   document.querySelectorAll('.nav a').forEach(a => a.classList.toggle('active', a.dataset.route === route));
@@ -342,6 +353,7 @@ function viewResults() {
       <a class="btn ghost" href="#/">Home</a>
     </div>
   </div>
+  ${supportCard()}
   ${mock ? `<div class="card"><h2>By topic</h2><div class="topic-bars">${Object.entries(byTopic).map(([id, t]) => `
     <div class="topic-bar"><span>${topicById.get(id).icon} ${esc(topicById.get(id).name)}</span><span class="bar"><i style="width:${pct(t.right / t.total)}%"></i></span><small>${t.right}/${t.total}</small></div>`).join('')}</div></div>` : ''}
   ${wrong.length ? `<div class="card"><h2>Review your mistakes</h2>${wrong.map(q => `
@@ -468,6 +480,8 @@ function viewAbout() {
   <div class="card prose">
     <h1>About Clearway</h1>
     <p>Clearway is a <b>free, open-source</b> study companion for the UK car theory test. It was built because learning the rules of the road shouldn't be locked behind a subscription.</p>
+    <p class="creator">Created by <b>${esc(CREATOR.name)}</b> · <a href="mailto:${CREATOR.email}">${esc(CREATOR.email)}</a></p>
+    ${supportCard()}
     <h3>Where the content comes from</h3>
     <ul>
       <li>Every question is <b>written from scratch</b> and based on <a href="${HC}" target="_blank" rel="noopener">The Highway Code</a> (Crown copyright, published under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank" rel="noopener">Open Government Licence v3.0</a>). Each answer links to the rule it comes from.</li>

@@ -145,6 +145,15 @@ a.topic-bar:hover { background: var(--brand-soft); }
 .sw { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -1px; margin-right: 4px; }
 .sw.click { position: static; background: #e8590c; }
 
+/* Creator & support */
+.support { display: flex; align-items: center; gap: 16px; }
+.support p { margin: .2em 0 0; }
+.support .s-icon { font-size: 2rem; }
+.support .btn { margin-left: auto; white-space: nowrap; }
+@media (max-width: 560px) { .support { flex-wrap: wrap; } .support .btn { margin-left: 0; width: 100%; } }
+.creator { padding: 10px 14px; background: var(--brand-soft); border-radius: 10px; }
+.foot a { color: inherit; }
+
 /* Videos */
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 20px; }
 .chip-link { padding: 6px 12px; border-radius: 99px; border: 1px solid var(--line); text-decoration: none; color: var(--text); font-size: .9rem; background: var(--surface); }
