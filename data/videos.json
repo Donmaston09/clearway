@@ -1,0 +1,108 @@
+{
+  "policy": "Only videos uploaded by the rights holder (government bodies, road-safety charities) and with embedding enabled. Run node scripts/check-videos.mjs to re-verify.",
+  "groups": [
+    { "id": "tests", "name": "Understanding the tests", "icon": "🎓" },
+    { "id": "motorway", "name": "Motorways and breakdowns", "icon": "🛣️" },
+    { "id": "vulnerable", "name": "Hierarchy of road users", "icon": "🚸" },
+    { "id": "attitude", "name": "Drink driving and attitude", "icon": "🤝" },
+    { "id": "safety-vehicle", "name": "Vehicle safety checks", "icon": "🔧" }
+  ],
+  "videos": [
+    {
+      "id": "7womeV0brCo", "channel": "Driver and Vehicle Standards Agency", "group": "tests",
+      "title": "Theory test: official DVSA guide",
+      "blurb": "DVSA explains what happens at the theory test centre and what you need to pass.",
+      "topics": []
+    },
+    {
+      "id": "SdQRkmdhwJs", "channel": "Driver and Vehicle Standards Agency", "group": "tests",
+      "title": "Hazard perception test: official DVSA guide",
+      "blurb": "How the hazard perception part works and when to click.",
+      "topics": ["hazard-awareness"]
+    },
+    {
+      "id": "5dZRbU2MiDk", "channel": "Driver and Vehicle Standards Agency", "group": "tests",
+      "title": "Driving test: official DVSA guide",
+      "blurb": "For later: what happens on the practical car driving test.",
+      "topics": []
+    },
+    {
+      "id": "damj01nXcZU", "channel": "Driver and Vehicle Standards Agency", "group": "safety-vehicle",
+      "title": "'Show me' questions: official DVSA guide",
+      "blurb": "The vehicle safety tasks you may be asked to show while driving on the practical test.",
+      "topics": ["safety-vehicle"]
+    },
+    {
+      "id": "uh8slnP76-w", "channel": "Driver and Vehicle Standards Agency", "group": "safety-vehicle",
+      "title": "'Tell me' questions: official DVSA guide",
+      "blurb": "The vehicle safety checks you may be asked to explain at the start of the practical test.",
+      "topics": ["safety-vehicle"]
+    },
+    {
+      "id": "zDfdQlSBc6Q", "channel": "National Highways", "group": "motorway",
+      "title": "Breakdown on a motorway? Go left",
+      "blurb": "If your vehicle has a problem, move left: to an emergency area, the hard shoulder or the next exit.",
+      "topics": ["motorway", "incidents"], "questions": ["mwy-005"]
+    },
+    {
+      "id": "RYgz9Rz5WDo", "channel": "National Highways", "group": "motorway",
+      "title": "What if you break down on a motorway?",
+      "blurb": "Step-by-step advice for a motorway breakdown.",
+      "topics": ["motorway", "incidents"], "questions": ["mwy-005"]
+    },
+    {
+      "id": "kW8c3XDluZ8", "channel": "National Highways", "group": "motorway",
+      "title": "What to do if you break down in a live lane",
+      "blurb": "What to do if you can't get off the carriageway.",
+      "topics": ["motorway", "incidents"]
+    },
+    {
+      "id": "tPKMMysOQMk", "channel": "National Highways", "group": "motorway",
+      "title": "Emergency areas",
+      "blurb": "Places to stop in an emergency on motorways without a permanent hard shoulder.",
+      "topics": ["motorway"]
+    },
+    {
+      "id": "DXu7TcIn448", "channel": "National Highways", "group": "motorway",
+      "title": "Never drive in a red X lane",
+      "blurb": "Why a red X means the lane is closed.",
+      "topics": ["motorway", "signs"], "questions": ["mwy-002"]
+    },
+    {
+      "id": "7StmCL1h8Ik", "channel": "National Highways", "group": "motorway",
+      "title": "Variable speed limits",
+      "blurb": "How variable speed limits on motorways work.",
+      "topics": ["motorway", "signs"], "questions": ["mwy-008"]
+    },
+    {
+      "id": "WY6vNFKWsOE", "channel": "National Highways", "group": "motorway",
+      "title": "What do the motorway signs and signals mean?",
+      "blurb": "The overhead signs and signals you'll see on motorways.",
+      "topics": ["motorway", "signs"], "questions": ["mwy-002"]
+    },
+    {
+      "id": "gtx2a7oWQ48", "channel": "Brake Charity", "group": "vulnerable",
+      "title": "The Highway Code has changed to protect people who walk, cycle and ride horses",
+      "blurb": "A short film on the 2022 Highway Code changes.",
+      "topics": ["vulnerable", "attitude"], "questions": ["att-004", "att-005", "vul-005"]
+    },
+    {
+      "id": "_x77OWR1yG8", "channel": "IAM RoadSmart", "group": "vulnerable",
+      "title": "Understanding the hierarchy of road users",
+      "blurb": "Explains Rule H1 and who has the greatest responsibility.",
+      "topics": ["vulnerable", "attitude"], "questions": ["att-004", "att-005", "vul-005"]
+    },
+    {
+      "id": "CERT0xNFGo4", "channel": "THINK! road safety", "group": "attitude",
+      "title": "THINK! Don't drink drive",
+      "blurb": "The Department for Transport's road safety campaign marks 50 years of anti-drink-drive campaigning.",
+      "topics": ["attitude", "documents"], "questions": ["doc-005"]
+    },
+    {
+      "id": "eJPtigXq1MM", "channel": "THINK! road safety", "group": "attitude",
+      "title": "A mate doesn't let a mate drink drive",
+      "blurb": "THINK! campaign about stepping in when a friend might drink and drive.",
+      "topics": ["attitude", "documents"], "questions": ["doc-005"]
+    }
+  ]
+}

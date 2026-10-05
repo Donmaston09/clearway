@@ -2,13 +2,14 @@ import * as store from './store.js';
 import { SCENES, playClip, scoreClip, drawPoster } from './hazard.js';
 
 // Change this to your fork's URL so "Report a problem" opens an issue in the right place.
-const REPO = 'https://github.com/clearway-theory/clearway';
+const REPO = 'https://github.com/Donmaston09/clearway';
 const HC = 'https://www.gov.uk/guidance/the-highway-code/';
 const MOCK = { count: 50, minutes: 57, pass: 43 };
 const HAZARD_PASS = { car: 44, max: 75 };
 
 const app = document.getElementById('app');
 let Q = [], TOPICS = [], SECTIONS = {}, byId = new Map(), topicById = new Map();
+let VIDEOS = [], VGROUPS = [], videosByQuestion = new Map();
 let session = null;     // active practice/mock session
 let abortClip = null;   // stops a playing hazard clip when navigating away
 
@@ -40,6 +41,35 @@ function ring(value, label) {
     <circle cx="60" cy="60" r="${r}" class="ring-fg" stroke-dasharray="${c}" stroke-dashoffset="${off}"/>
     <text x="60" y="58" class="ring-num">${value}%</text><text x="60" y="78" class="ring-lbl">${label}</text></svg>`;
 }
+
+// Click-to-play YouTube facade. Nothing is loaded from YouTube until the learner presses play,
+// and then only from the privacy-enhanced youtube-nocookie.com domain.
+function videoCard(v, { compact = false } = {}) {
+  return `<figure class="video ${compact ? 'compact' : ''}">
+    <button class="yt-facade" data-yt="${esc(v.id)}" aria-label="Play video: ${esc(v.title)}">
+      <span class="yt-play" aria-hidden="true">▶</span>
+      ${compact ? `<span class="yt-title">${esc(v.title)}</span>` : ''}
+      <span class="yt-channel">${esc(v.channel)}</span>
+    </button>
+    ${compact ? '' : `<figcaption><b>${esc(v.title)}</b><span class="muted small">${esc(v.blurb)}</span>
+      <a class="small" href="https://www.youtube.com/watch?v=${esc(v.id)}" target="_blank" rel="noopener">Open on YouTube ↗</a></figcaption>`}
+  </figure>`;
+}
+
+document.addEventListener('click', e => {
+  const btn = e.target.closest('.yt-facade');
+  if (!btn) return;
+  if (!navigator.onLine) { btn.querySelector('.yt-channel').textContent = 'You\'re offline. Videos need an internet connection.'; return; }
+  const v = VIDEOS.find(x => x.id === btn.dataset.yt);
+  const frame = document.createElement('iframe');
+  frame.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(btn.dataset.yt)}?autoplay=1&rel=0&playsinline=1`;
+  frame.title = v ? v.title : 'YouTube video';
+  frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+  frame.referrerPolicy = 'strict-origin-when-cross-origin';
+  frame.allowFullscreen = true;
+  frame.className = 'yt-frame';
+  btn.replaceWith(frame);
+});
 
 function setNav(route) {
   document.querySelectorAll('.nav a').forEach(a => a.classList.toggle('active', a.dataset.route === route));
@@ -105,6 +135,7 @@ function viewHome() {
     </a>
     <a class="action card" href="#/mock"><span class="a-icon">⏱️</span><span><b>Mock test</b><small>${MOCK.count} questions · ${MOCK.minutes} min · pass ${MOCK.pass}</small></span></a>
     <a class="action card" href="#/hazard"><span class="a-icon">🚗</span><span><b>Hazard perception</b><small>Interactive clips scored like the real test</small></span></a>
+    <a class="action card" href="#/videos"><span class="a-icon">🎬</span><span><b>Watch &amp; learn</b><small>Official videos from DVSA, National Highways and THINK!</small></span></a>
     <a class="action card" href="#/practice"><span class="a-icon">📚</span><span><b>Practice by topic</b><small>All 14 official topic areas</small></span></a>
   </section>
 
@@ -225,6 +256,7 @@ function viewQuiz() {
         <b>${chosen === q.answer ? '✓ Correct' : '✗ Not quite'}</b>
         <p>${esc(q.explain)}</p>
         ${refLink(q.ref)}
+        ${(videosByQuestion.get(q.id) || []).slice(0, 1).map(v => `<details class="watch"><summary>🎬 Watch: ${esc(v.title)} <span class="muted small">· ${esc(v.channel)}</span></summary>${videoCard(v, { compact: true })}</details>`).join('')}
         <a class="small muted report" target="_blank" rel="noopener" href="${REPO}/issues/new?title=${encodeURIComponent('Question ' + q.id + ': ')}&labels=content">Report a problem with this question</a>
       </div>` : ''}
     </article>
@@ -332,6 +364,7 @@ function viewHazardList() {
     <p>Click (or tap, or press <kbd>Space</kbd>) as soon as you see a <b>developing hazard</b>, meaning something that would make you change speed or direction. Clicking earlier scores more, up to 5 points. Clicking constantly or in a rhythm scores 0 for the clip, just like the real test.</p>
     <p class="muted small">The real test has 14 clips and 15 developing hazards (out of 75), with a pass mark of ${HAZARD_PASS.car}. These clips are rendered live from open scene files, so anyone can write new ones. See CONTRIBUTING.md.</p>
   </div>
+  ${(v => v ? `<details class="card watch"><summary>🎬 New to hazard perception? Watch DVSA's official guide first</summary>${videoCard(v)}</details>` : '')(VIDEOS.find(v => v.id === 'SdQRkmdhwJs'))}
   <div class="grid">
     ${SCENES.map(sc => {
       const best = Math.max(-1, ...results.filter(r => r.id === sc.id).map(r => r.score));
@@ -408,6 +441,26 @@ function renderDebrief(scene, clicks, result) {
   };
 }
 
+// ---------- videos ----------
+function viewVideos(groupId) {
+  setNav('videos');
+  const groups = VGROUPS.filter(g => VIDEOS.some(v => v.group === g.id));
+  const shown = groupId ? groups.filter(g => g.id === groupId) : groups;
+  app.innerHTML = `
+  <h1>🎬 Watch &amp; learn</h1>
+  <p class="muted">Free videos from the organisations that set the rules: DVSA, National Highways, the Department for Transport's THINK! campaign, and road-safety charities. Each one plays here in the app.</p>
+  <div class="chips" role="navigation" aria-label="Video categories">
+    <a class="chip-link ${!groupId ? 'on' : ''}" href="#/videos">All</a>
+    ${groups.map(g => `<a class="chip-link ${g.id === groupId ? 'on' : ''}" href="#/videos/${g.id}">${g.icon} ${esc(g.name)}</a>`).join('')}
+  </div>
+  ${shown.map(g => `
+    <section>
+      <h2>${g.icon} ${esc(g.name)}</h2>
+      <div class="video-grid">${VIDEOS.filter(v => v.group === g.id).map(v => videoCard(v)).join('')}</div>
+    </section>`).join('')}
+  <p class="muted small">Know a great official video we're missing? <a href="${REPO}/issues/new?title=${encodeURIComponent('Video suggestion: ')}&labels=video" target="_blank" rel="noopener">Suggest it</a>. We only include videos published by the organisation that made them.</p>`;
+}
+
 // ---------- about ----------
 function viewAbout() {
   setNav('about');
@@ -429,7 +482,7 @@ function viewAbout() {
       <li><a href="https://www.gov.uk/guidance/know-your-traffic-signs" target="_blank" rel="noopener">Know Your Traffic Signs</a></li>
     </ul>
     <h3>Your data</h3>
-    <p>Progress is stored only in this browser. There's no account and no analytics. You can move your progress to another device:</p>
+    <p>Progress is stored only in this browser. There's no account and no analytics. Videos are loaded from YouTube's privacy-enhanced mode only when you press play. You can move your progress to another device:</p>
     <div class="row">
       <button class="btn ghost" id="export">⬇ Export progress</button>
       <label class="btn ghost">⬆ Import progress<input type="file" id="import" accept="application/json" hidden></label>
@@ -461,7 +514,7 @@ function route() {
   if (name !== 'quiz' && name !== 'results' && session && !session.done && session.kind !== 'mock') session = null;
   const views = {
     '': viewHome, practice: () => viewPractice(arg), review: viewReview, mock: viewMockIntro,
-    quiz: viewQuiz, results: viewResults, hazard: () => arg ? viewHazardPlay(arg) : viewHazardList(), about: viewAbout,
+    quiz: viewQuiz, results: viewResults, videos: () => viewVideos(arg), hazard: () => arg ? viewHazardPlay(arg) : viewHazardList(), about: viewAbout,
   };
   (views[name] || viewHome)();
   window.scrollTo(0, 0);
@@ -477,7 +530,9 @@ window.addEventListener('keydown', e => {
 });
 
 async function init() {
-  const [qs, tp] = await Promise.all([fetch('data/questions.json').then(r => r.json()), fetch('data/topics.json').then(r => r.json())]);
+  const [qs, tp, vd] = await Promise.all(['questions', 'topics', 'videos'].map(f => fetch(`data/${f}.json`).then(r => r.json())));
+  VIDEOS = vd.videos; VGROUPS = vd.groups;
+  for (const v of VIDEOS) for (const id of v.questions || []) videosByQuestion.set(id, [...(videosByQuestion.get(id) || []), v]);
   Q = qs.questions; TOPICS = tp.topics; SECTIONS = tp.sections;
   byId = new Map(Q.map(q => [q.id, q]));
   topicById = new Map(TOPICS.map(t => [t.id, t]));

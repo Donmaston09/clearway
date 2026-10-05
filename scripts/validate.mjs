@@ -33,8 +33,22 @@ for (const t of topics) {
   if (n < 3) errors.push(`topic "${t.id}" has only ${n} questions (minimum 3)`);
 }
 
+// Videos: well-formed IDs, known groups/topics, and links to questions that exist.
+const { videos, groups } = JSON.parse(readFileSync(new URL('data/videos.json', root)));
+const groupIds = new Set(groups.map(g => g.id)), videoIds = new Set();
+for (const v of videos) {
+  const err = msg => errors.push(`video ${v.id}: ${msg}`);
+  if (!/^[\w-]{11}$/.test(v.id)) err('id must be an 11-character YouTube video id');
+  if (videoIds.has(v.id)) err('duplicate video');
+  videoIds.add(v.id);
+  if (!groupIds.has(v.group)) err(`unknown group "${v.group}"`);
+  if (!v.title || !v.channel || !v.blurb) err('needs title, channel and blurb');
+  for (const t of v.topics || []) if (!topicIds.has(t)) err(`unknown topic "${t}"`);
+  for (const id of v.questions || []) if (!seenIds.has(id)) err(`links to unknown question "${id}"`);
+}
+
 if (errors.length) {
   console.error(`✗ ${errors.length} problem(s):\n  ` + errors.join('\n  '));
   process.exit(1);
 }
-console.log(`✓ ${questions.length} questions across ${topics.length} topics look good`);
+console.log(`✓ ${questions.length} questions across ${topics.length} topics and ${videos.length} videos look good`);

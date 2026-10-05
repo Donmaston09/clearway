@@ -34,6 +34,22 @@ Add an object to `data/questions.json`:
 
 **Every content pull request needs a reviewer to check the cited rule on GOV.UK.** Accuracy matters more than volume.
 
+## Suggesting a video
+
+Videos are embedded from YouTube, so we never host or copy them. Add an entry to `data/videos.json`:
+
+```json
+{ "id": "11-char-id", "channel": "Exact YouTube channel name", "group": "motorway",
+  "title": "Short title", "blurb": "One sentence on what it covers.",
+  "topics": ["motorway"], "questions": ["mwy-002"] }
+```
+
+Rules:
+- **Only videos uploaded by the organisation that made them**: DVSA, National Highways, THINK!/DfT, police forces, or road-safety charities (Brake, IAM RoadSmart, RoSPA, etc.). No re-uploads of DVSA clips, and no channels selling courses.
+- Embedding must be enabled. `channel` must match the uploader exactly, because `node scripts/check-videos.mjs` checks it.
+- Watch the whole video and make sure it matches the current Highway Code. Older videos can be out of date (for example, from before the 2022 changes).
+- `questions` (optional) shows the video under those questions' explanations.
+
 ## Writing a hazard perception scene
 
 Scenes live in `js/hazard.js → SCENES`. A scene describes:

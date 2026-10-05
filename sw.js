@@ -1,8 +1,8 @@
 // Offline support: pre-cache the app shell so it works with no connection.
-const CACHE = 'clearway-v1';
+const CACHE = 'clearway-v2';
 const SHELL = [
   './', 'index.html', 'css/app.css', 'js/app.js', 'js/store.js', 'js/hazard.js',
-  'data/questions.json', 'data/topics.json', 'manifest.webmanifest', 'img/icon.svg',
+  'data/questions.json', 'data/topics.json', 'data/videos.json', 'manifest.webmanifest', 'img/icon.svg',
   ...['give-way', 'stop', 'no-entry', 'national-speed-limit', 'clearway', 'no-waiting', 'min-30', 'max-30', 'ahead-only'].map(n => `img/signs/${n}.svg`),
 ];
 

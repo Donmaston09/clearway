@@ -145,4 +145,24 @@ a.topic-bar:hover { background: var(--brand-soft); }
 .sw { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -1px; margin-right: 4px; }
 .sw.click { position: static; background: #e8590c; }
 
+/* Videos */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 20px; }
+.chip-link { padding: 6px 12px; border-radius: 99px; border: 1px solid var(--line); text-decoration: none; color: var(--text); font-size: .9rem; background: var(--surface); }
+.chip-link.on { background: var(--brand-soft); border-color: var(--brand); color: var(--brand); font-weight: 600; }
+.video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin-bottom: 24px; }
+.video { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.video.compact { border: 0; box-shadow: none; border-radius: 10px; margin-top: 8px; }
+.yt-facade, .yt-frame { display: block; width: 100%; aspect-ratio: 16/9; border: 0; }
+.yt-facade { position: relative; cursor: pointer; text-align: left; padding: 14px; color: #fff; font: inherit;
+  background: radial-gradient(120% 90% at 20% 10%, #1f6f4a 0%, #0f3d29 55%, #0a2219 100%); }
+.yt-facade:hover .yt-play { transform: translate(-50%, -50%) scale(1.08); background: #d4121a; }
+.yt-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 64px; height: 44px; border-radius: 12px;
+  background: rgb(0 0 0 / .65); display: grid; place-items: center; font-size: 1.2rem; transition: transform .15s, background .15s; }
+.yt-title { position: absolute; left: 14px; right: 14px; bottom: 30px; font-weight: 700; line-height: 1.3; text-shadow: 0 1px 2px rgb(0 0 0 / .5); }
+.yt-channel { position: absolute; left: 14px; bottom: 10px; font-size: .78rem; opacity: .8; }
+.video figcaption { display: grid; gap: 4px; padding: 12px 14px 14px; }
+.watch summary { cursor: pointer; font-weight: 600; color: var(--brand); list-style-position: inside; }
+.explain .watch { margin: 4px 0 8px; }
+details.card.watch .video { margin-top: 12px; box-shadow: none; }
+
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
