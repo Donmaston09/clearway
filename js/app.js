@@ -130,7 +130,7 @@ function viewHome() {
     <div class="hero-ring">${ring(ready, 'ready')}</div>
     <div class="hero-text">
       <h1>Free UK driving theory practice</h1>
-      <p class="muted">No paywalls, no adverts, no account. Every answer links to the official Highway Code, and your progress stays on this device.</p>
+      <p class="muted">Free to practise, with no adverts and no sign-up needed. Every answer links to the official Highway Code, and your progress stays on this device.</p>
       <div class="stats">
         <span><b>${seen}</b>/${Q.length} questions seen</span>
         <span><b>${store.streak()}</b> day streak 🔥</span>
@@ -479,7 +479,7 @@ function viewAbout() {
   app.innerHTML = `
   <div class="card prose">
     <h1>About Clearway</h1>
-    <p>Clearway is a <b>free, open-source</b> study companion for the UK car theory test. It was built because learning the rules of the road shouldn't be locked behind a subscription.</p>
+    <p>Clearway is an <b>open-source</b> study companion for the UK car theory test. It was built so that every learner can practise the essentials at no cost.</p>
     <p class="creator">Created by <b>${esc(CREATOR.name)}</b> · <a href="mailto:${CREATOR.email}">${esc(CREATOR.email)}</a></p>
     ${supportCard()}
     <h3>Where the content comes from</h3>
@@ -496,7 +496,7 @@ function viewAbout() {
       <li><a href="https://www.gov.uk/guidance/know-your-traffic-signs" target="_blank" rel="noopener">Know Your Traffic Signs</a></li>
     </ul>
     <h3>Your data</h3>
-    <p>Progress is stored only in this browser. There's no account and no analytics. Videos are loaded from YouTube's privacy-enhanced mode only when you press play. You can move your progress to another device:</p>
+    <p>Progress is stored only in this browser. You don't need an account, and there are no analytics. Videos are loaded from YouTube's privacy-enhanced mode only when you press play. You can move your progress to another device:</p>
     <div class="row">
       <button class="btn ghost" id="export">⬇ Export progress</button>
       <label class="btn ghost">⬆ Import progress<input type="file" id="import" accept="application/json" hidden></label>

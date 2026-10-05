@@ -1,6 +1,6 @@
 # Contributing to Clearway
 
-Thank you! Every contribution helps learner drivers who can't or won't pay for a subscription.
+Thank you! Every contribution helps more learner drivers prepare for their test.
 
 ## ⚖️ The one rule: content must be original
 

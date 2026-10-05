@@ -1,6 +1,6 @@
 # Clearway: free UK driving theory practice
 
-**No paywalls. No adverts. No account. Open source.**
+**Free to practise. No adverts. No sign-up needed. Open source.**
 
 Clearway helps learner drivers prepare for the UK car theory test. Every question is written from scratch, is based on The Highway Code, and links to the exact rule it tests, so you learn *why* as well as *what*.
 
@@ -8,7 +8,7 @@ Clearway helps learner drivers prepare for the UK car theory test. Every questio
 
 | | Typical theory apps | Clearway |
 |---|---|---|
-| Price | Free tier, then subscription | Free forever |
+| Price | Free tier, then subscription | Free to practise, supported by donations |
 | Sources | Answers with no reference | Every answer links to the Highway Code rule |
 | Learning method | Random quizzes | Spaced repetition: mistakes come back at 10 min, 1, 3, 7 and 21 days |
 | Hazard perception | Licensed video, paid | Open, code-defined scenes anyone can write, scored like the real test |
